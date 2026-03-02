@@ -1,0 +1,97 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-container {
+    box-sizing: border-box;
+    max-width: 1270px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.simple-flexbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.simple-flexbox-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NAV */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+}
+
+.navbar img {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem; /*take this away once img comes in*/
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 3.2rem;                 
+    list-style: none;
+  }
+  
+.navbar li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    position: relative;
+}
+
+.navbar li a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #567741;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.navbar li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/*FONTS*/
+h1 {
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+}
