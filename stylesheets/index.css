@@ -3,11 +3,11 @@
   box-sizing: border-box;
   padding: 6rem 4rem 5rem;
   width: 100%;
-  text-align: left;
   position: relative;
 }
 
 .hero-container {
+  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
   color: #567741;
   font-size: 5rem;
   line-height: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -27,3 +27,45 @@
   color: #000000;
   font-size: 3rem;
 }
+
+.hero-pill {
+  display: inline-block;
+  border: 2px solid #f9bbbc;
+  background: #f9bbbc82;
+  color: #292929;
+  padding: 0 1rem;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  /*box-shadow: 0 2px 8px 0 #0000002c;*/
+  margin-bottom: 2rem;
+}
+
+.hero i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8rem;
+  font-size: 4rem;
+  color: #567741;
+
+  /* bounce animation */
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/*
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  25% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  75% {
+    transform: translateX(-50%) translateY(5px);
+  }
+}
+  */
